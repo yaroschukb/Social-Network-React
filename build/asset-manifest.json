@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/StudyProjectReact/static/css/main.06fee659.chunk.css",
+    "main.js": "/StudyProjectReact/static/js/main.c38a44e9.chunk.js",
+    "main.js.map": "/StudyProjectReact/static/js/main.c38a44e9.chunk.js.map",
+    "runtime-main.js": "/StudyProjectReact/static/js/runtime-main.d22f370e.js",
+    "runtime-main.js.map": "/StudyProjectReact/static/js/runtime-main.d22f370e.js.map",
+    "static/css/2.2a86faee.chunk.css": "/StudyProjectReact/static/css/2.2a86faee.chunk.css",
+    "static/js/2.5db7a1b8.chunk.js": "/StudyProjectReact/static/js/2.5db7a1b8.chunk.js",
+    "static/js/2.5db7a1b8.chunk.js.map": "/StudyProjectReact/static/js/2.5db7a1b8.chunk.js.map",
+    "index.html": "/StudyProjectReact/index.html",
+    "precache-manifest.76e15a7b82f6191f5d87f716cf6f0c4a.js": "/StudyProjectReact/precache-manifest.76e15a7b82f6191f5d87f716cf6f0c4a.js",
+    "service-worker.js": "/StudyProjectReact/service-worker.js",
+    "static/css/2.2a86faee.chunk.css.map": "/StudyProjectReact/static/css/2.2a86faee.chunk.css.map",
+    "static/css/main.06fee659.chunk.css.map": "/StudyProjectReact/static/css/main.06fee659.chunk.css.map",
+    "static/js/2.5db7a1b8.chunk.js.LICENSE.txt": "/StudyProjectReact/static/js/2.5db7a1b8.chunk.js.LICENSE.txt",
+    "static/media/602271647.gif": "/StudyProjectReact/static/media/602271647.03299aa2.gif",
+    "static/media/810.svg": "/StudyProjectReact/static/media/810.6aa4f4ff.svg",
+    "static/media/index.jpeg": "/StudyProjectReact/static/media/index.405f7b21.jpeg",
+    "static/media/like.png": "/StudyProjectReact/static/media/like.56c96440.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d22f370e.js",
+    "static/css/2.2a86faee.chunk.css",
+    "static/js/2.5db7a1b8.chunk.js",
+    "static/css/main.06fee659.chunk.css",
+    "static/js/main.c38a44e9.chunk.js"
+  ]
+}
