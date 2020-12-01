@@ -1,0 +1,29 @@
+
+
+
+.block_header {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: yellow;
+}
+
+.block_friends h1 {
+	font-size: 15px;	
+}
+
+.friends {
+	display:flex;
+	
+}
+
+.go_to{
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	color:#ff0001;
+	position: relative;
+	left:26%;
+	top:25%;
+}
+

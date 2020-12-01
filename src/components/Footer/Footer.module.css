@@ -1,0 +1,36 @@
+.content {
+    grid-area: footer;
+    background-color: goldenrod;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 3px;
+    height: 100px;
+}
+
+.content div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25%;
+    margin-left: 10px;
+}
+
+.content div button {
+   margin-top: 4px;
+}
+
+.modalWindow ul li, p{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+.modalWindow ul li a {
+    text-decoration: none;
+    color: rgb(107, 4, 4);
+}
+
+.modalWindow ul li a:hover {
+    color: gold;
+}
+

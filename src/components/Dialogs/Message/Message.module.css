@@ -1,0 +1,23 @@
+
+
+
+.message {
+	display: block;
+	min-height: 30px;
+	max-width: 300px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid lightgreen;
+	box-shadow: -1px 1px 11px 7px rgba(0,0,0,0.75);
+	border-radius: 20px;
+	background-color:  rgb(78, 129, 238)
+}
+
+
+
+
+
+
+
+
+

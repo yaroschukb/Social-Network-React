@@ -1,0 +1,40 @@
+.content{
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+}
+
+.btn {
+	display: flex;
+	position: absolute;
+	width: 100px;
+	height: 50px;
+	left: 2%;
+	top: 6.5%;
+	justify-content: center;
+	margin: 20px 20px 10px 20px;
+	margin-top: 20px;
+	padding: 3px;
+	align-items: center;
+	border-radius: 10px;
+	border: 2px solid #3e7327;
+	background-color: #3e7327;
+	color: white;
+}
+
+.button {
+	display: flex;
+	width: 100px;
+	height: 50px;
+	justify-content: center;
+	margin: 20px 20px 10px 20px;
+	margin-top: 20px;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: none;
+}
+
+
+.cropper {
+	height: 200px;
+}

@@ -1,0 +1,28 @@
+
+
+.dialogs{ 
+   margin: 10px;
+}
+.content_block {
+   display: flex;
+   flex-direction: row;
+   align-items: baseline;
+}
+
+.dialogs_newMessage {
+   margin: 10px;
+}
+
+.dialogs_items {
+   padding: 10px;
+   width: 100px; 
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,9 @@
+
+
+.content{
+   grid-area: content;
+   background: lightgray;
+   margin-left: 10px;
+   margin-top: 10px;
+}
+

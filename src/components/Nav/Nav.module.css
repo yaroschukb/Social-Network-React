@@ -1,0 +1,65 @@
+
+
+.block {
+   grid-area: nav;
+   background: #384346;
+   padding: 20px;
+   border-radius:5px;
+   margin-right: 3px;
+}
+
+
+.item {
+	font-size: 20px;
+	color: gold;
+	margin-left: 5px;
+}
+
+.item a.active{
+	font-size: 30px;
+	color: red;
+}
+
+.item:last-child{
+	margin-top: 20px;
+}
+
+.nav a {
+	text-decoration: none;
+}
+.nav a:hover {
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.friends {
+	height: 120px;
+	width: 100%;
+	padding: 5px;
+	margin-top: 20px;
+	border-radius: 5px;
+	box-shadow: 7px -4px 17px 3px rgba(0,0,0,0.75);
+	background: #d6cc77;
+}
+
+.modalWindow ul li, p{
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+}
+
+.modalWindow ul li a {
+    text-decoration: none;
+    color: rgb(107, 4, 4);
+}
+
+.modalWindow ul li a:hover {
+    color: gold;
+}
+
+.modalWindow a {
+	text-decoration: none;
+    color: rgb(107, 4, 4);
+}
+.modalWindow a:hover {
+	color: gold;
+}

@@ -1,0 +1,6 @@
+.preloader {
+    display: flex;
+    justify-content: center;
+    top: 30%;
+    left: 50%;
+}
