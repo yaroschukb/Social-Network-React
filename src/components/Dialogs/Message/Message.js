@@ -1,13 +1,12 @@
 import React from 'react';
-import ss from './Message.module.css';
+import style from './Message.module.css';
 
-
-const Message =(props)=>{
+const Message = (props) =>{
 	return (
-		<div className={ss.message}> {props.message}</div>
-		)
+		<div className={style.message}> 
+			{props.message}
+		</div>
+	)
 };
-
-
 
 export default Message; 

@@ -9,39 +9,37 @@ import ProfileDataForm from './ProfileDataForm';
 import { Button } from 'react-bootstrap';
 
 const ProfileInfo = ({ profile, status, updateStatus, isAuth, saveProfile}) => {
-	const [editMode, setEditMode] = useState(false)
+
+	const [editMode, setEditMode] = useState(false);
 
 	if (!profile){
 		return <div className={style.preLoader}>
 					<Preloader />
 			 	</div>
-	
 	} else {
-
-	let onSubmit = (formData) => {
-		saveProfile(formData)
-		setEditMode(false)
+		let onSubmit = (formData) => {
+			saveProfile(formData)
+			setEditMode(false)
 	}
 
-	return (
-	<div className = {style.content}>
-		<div className={style.contentImg}>
-		</div>
-      	<div className={style.profileImg}>
-      		<img src={profile.photos.large || imgI} alt="Ooops!" />
-      	</div>
-		{ editMode ? <ProfileDataForm profile={profile}
-									  onSubmit={onSubmit}
-									  initialValues={profile} /> 
-				   : <ProfileData	profile={profile} 
-				   					isAuth={isAuth}
-									goToEditMode={()=>setEditMode(true)}/>}
-		<div className={style.profileStatus}>
-            <ProfilestatusWithHooks status={status} updateStatus={updateStatus}/>  
-        </div>
-    </div>
-	)
-}
+		return (
+		<div className = {style.content}>
+			<div className={style.contentImg} />
+    	  	<div className={style.profileImg}>
+    	  		<img src={profile.photos.large || imgI} alt="Ooops!" />
+    	  	</div>
+			{ editMode ? <ProfileDataForm profile={profile}
+										  onSubmit={onSubmit}
+										  initialValues={profile} /> 
+					   : <ProfileData	profile={profile} 
+					   					isAuth={isAuth}
+										goToEditMode={()=>setEditMode(true)}/>}
+			<div className={style.profileStatus}>
+    	        <ProfilestatusWithHooks status={status} updateStatus={updateStatus}/>  
+    	    </div>
+    	</div>
+		)
+	}
 };
 
 const ProfileData = ({profile, isAuth, goToEditMode}) => {
@@ -52,9 +50,9 @@ const ProfileData = ({profile, isAuth, goToEditMode}) => {
       	</div>
       	<div className={style.contacts}>
       		<span><b>Contacts:</b> </span>
-			  <div>{Object.keys(profile.contacts).map(key=>
+			  <div>{Object.keys(profile.contacts).map(key=>(
 				<Contacts key={key} contactTitle={key} contactValue={profile.contacts[key]}/>
-      			)
+      			))
       		}				
       		</div>
       	</div>
@@ -75,7 +73,7 @@ const ProfileData = ({profile, isAuth, goToEditMode}) => {
 		</div>
 	</div> 
 	)
-}
+};
 
 const Contacts = ({contactTitle, contactValue}) => {
 	if(!contactValue){
@@ -91,6 +89,6 @@ const Contacts = ({contactTitle, contactValue}) => {
 			</div>
 			)
 	}
-}
+};
 
 export default ProfileInfo; 

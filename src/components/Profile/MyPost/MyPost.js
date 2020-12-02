@@ -6,16 +6,19 @@ import ReduxForm from '../../common/ReduxForm/ReduxForm';
 
 
 const MyPost = (props) => {
-      let addPost = (values) => {
-           props.addPost(values.newText);
-           props.resetForm('profileAddPostForm');   
-      }
+      
+  let addPost = (values) => {
+      props.addPost(values.newText);
+      props.resetForm('profileAddPostForm');   
+  };
 
-      let postElement = props.postMessages.map (p => <Post  key={p.id}
-                                                            id={p.id}
-                                                            message={p.message} 
-                                                            likesCount={p.likesCount}
-                                                            />);
+  let postElement = props.postMessages.map (p => (
+    <Post key={p.id}
+          id={p.id}
+          message={p.message} 
+          likesCount={p.likesCount}
+    />
+  ));
 
   return (
       <div className={ss.description}>
@@ -28,10 +31,10 @@ const MyPost = (props) => {
         </div>
       </div>
     )
-}
+};
 
 const AddPostFormRedux = reduxForm ({
-	form: "profileAddPostForm"
-})(ReduxForm);
+    form: "profileAddPostForm"
+  })(ReduxForm);
 
 export default MyPost; 

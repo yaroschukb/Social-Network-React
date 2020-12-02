@@ -1,5 +1,5 @@
-import React from 'react';
-import style from './FormsControls.module.css';
+import React from 'react'
+import style from './FormsControls.module.css'
 
 
 

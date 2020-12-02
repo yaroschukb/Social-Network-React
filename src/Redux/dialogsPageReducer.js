@@ -19,20 +19,19 @@ let initialState = {
         };
 
 const dialogsPageReducer = (state=initialState, action) => {
-			switch (action.type){
-		       	case NEW_MESSAGE:
-                       let body = action.newText;
-				      		return {
-				      			...state,
-				      			messages: [...state.messages, {id: Math.ceil(Math.random(10)), message: body,}],
-				      		}
-				        				       				
-		       	default: 
-	       					return state;
+	switch (action.type){
+	   	case NEW_MESSAGE:
+            let body = action.newText;
+		      	return {
+		      		...state,
+		      		messages: [...state.messages, {id: Math.ceil(Math.random(10)), message: body,}],
+		      	}			       				
+	   	default: 
+				return state;
 	}
 };
 
-
+//Action Creator Block
 export const newMessageActionCreator = (newText)=>({type:NEW_MESSAGE, newText});
 export const updateNewMessageTextActionCreator = (message)=>({type:UPDATE_NEW_MESSAGE_TEXT, newMessage: message});
 

@@ -1,9 +1,9 @@
-import React from 'react';
-import {Field} from 'redux-form';
-import {required, maxLength15} from './../../../utils/validators/validators';
-import {Textarea} from './../../common/FormsControls/FormsControls';
+import React from 'react'
+import {Field} from 'redux-form'
+import {required} from './../../../utils/validators/validators'
+import {Textarea} from './../../common/FormsControls/FormsControls'
 
-const Text = Textarea('input'); 
+const Text = Textarea('input')
 
 const ReduxForm = (props) => {
 	return (
@@ -17,6 +17,6 @@ const ReduxForm = (props) => {
 			</div>
 		</form>
 	)
-};
+}
 
-export default ReduxForm;
+export default ReduxForm

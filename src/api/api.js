@@ -47,8 +47,7 @@ export const profileAPI = {
 				headers:{
 					'Content-Type': 'multipart/form-data'
 			}
-		}
-	)
+		})
 	},
 
 	saveProfile (data) {
@@ -84,7 +83,7 @@ export const authAPI = {
 export const newsAPI = {
 	getNews(currentPage=1, pageSize){
 		 return axios.get(`https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=d4GtezqO8wCbWTlr3CRj4HX8KxHM0r0u`)
-		},
+		}
 }
 
 

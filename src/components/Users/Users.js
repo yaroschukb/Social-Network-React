@@ -1,7 +1,7 @@
-import React from "react";
-import style from "./Users.module.css";
-import Paginator from "../common/Paginator/Paginator";
-import UserProfile from "./UserProfile/UserProfile";
+import React from 'react';
+import style from './Users.module.css';
+import Paginator from '../common/Paginator/Paginator';
+import UserProfile from './UserProfile/UserProfile';
 
 const Users = (props) => {
   return (
@@ -16,17 +16,18 @@ const Users = (props) => {
         />
       </div>
       <div>
-        {props.users.map(e=> <UserProfile
-          key={e.id} 
-          users={e}
-          unfollow={props.unfollow}
-          follow={props.follow}
-          followingInProgress={props.followingInProgress}
-                 />)}
+        {props.users.map(e=> (
+          <UserProfile
+            key={e.id} 
+            users={e}
+            unfollow={props.unfollow}
+            follow={props.follow}
+            followingInProgress={props.followingInProgress}
+          />
+        ))}
       </div>
-      
     </div>
-  );
+  )
 };
 
 export default Users;
