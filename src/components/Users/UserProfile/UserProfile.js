@@ -2,11 +2,12 @@ import React from 'react';
 import style from './UserProfile.module.css';
 import userPhoto from './../../assets/images/index.jpeg';
 import { NavLink } from 'react-router-dom';
+import { Col } from 'antd';
 
 
 const UserProfile = ({users, ...props}) => {
    return (
-    <div className={style.container} key={props.key}>
+    <Col className={style.container} key={props.key} span={8}>
       <div className={style.box}>
         <div>
           <NavLink to={"/Profile/" + users.id}>
@@ -49,7 +50,7 @@ const UserProfile = ({users, ...props}) => {
           </div>
         </div>
       </div>
-    </div>
+    </Col>
   )
 };
 

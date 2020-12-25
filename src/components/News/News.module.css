@@ -1,22 +1,14 @@
 .content{
-   grid-area: content;
-   background: lightgray;
    margin-left: 10px;
-}
-
-.block_content {
-	width: 100%;
-	margin-left: 10px;
-
 }
 
 .news_block{
    display:block;
-   width: 650px;
    margin: 10px;
-   background-color: rgb(197, 160, 160);
+   background-color: rgb(233, 227, 227);
    border-radius: 5px;
    padding: 5px;
+   max-height: 800px;
 }
 
 .news_block h1 {
@@ -25,6 +17,6 @@
 
 .news_block img {
    align-items: center;
-   width: 630px;
-   height: 400px;
+   max-height: 400px;
+   max-width: 500px;
 }

@@ -1,19 +1,10 @@
 
-
-.content{
-	display: flex;
-	flex-direction: column;
-	width: 700px;
-	min-height: 500px;
-   	margin: 10px 10px 10px 10px;
-}
-
 .contentImg {
-	position: relative;
-	width: 680px;
-	height: 300px;
+	width: 100%; 
+	min-height: 300px;
 	z-index: 0;
 	background-image: url(https://www.w3schools.com/howto/img_snow_wide.jpg);
+	background-repeat: no-repeat;
 	border-radius:3px;
 }
 
@@ -25,7 +16,7 @@
 
 .profileImg img {
 	z-index:0;
-	width: 270px;
+	/* width: 270px; */
 	height: 270px;
 	border-radius: 50%;
 	border:4px solid #28abec;
@@ -76,9 +67,13 @@
 }
 
 .contacts {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 500px;
 	font-size: 15px;
 	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .contacts div{
@@ -87,7 +82,7 @@
 }
 
 .contacts div h1 {
-	font-size: 15px;
+	font-size: 18px;
 	margin-top: 6px;
 	text-decoration: none;
 }
@@ -99,11 +94,15 @@
 	text-decoration: none;
 }
 
+.vacantion{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
 
 .preLoader {
-	display: flex;
 	position: absolute;
-	justify-content: center;
 	top: 40%;
 	left:50%;
 }

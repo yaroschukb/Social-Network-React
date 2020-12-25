@@ -10,15 +10,15 @@ import thunk from 'redux-thunk';
 import { reducer as formReducer } from 'redux-form';
 
 let redusers = combineReducers({
-					profilePage: profilePageReducer,
-					dialogsPage: dialogsPageReducer,
-					sidebar: sideBarPageReducer,
-					usersPage: usersPageReducer,
-					auth: authReducer,
-					newsPage: newsPageReducer,
-					form: formReducer,
-					app: appReducer,
-				});
+		profilePage: profilePageReducer,
+		dialogsPage: dialogsPageReducer,
+		sidebar: sideBarPageReducer,
+		usersPage: usersPageReducer,
+		auth: authReducer,
+		newsPage: newsPageReducer,
+		form: formReducer,
+		app: appReducer,
+	});
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 let store = createStore(redusers, composeEnhancers(applyMiddleware(thunk)));

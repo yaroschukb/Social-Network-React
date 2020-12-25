@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import style from './Profilestatus.module.css';
+import { Col, Row } from 'antd';
 
 
 const ProfilestatusWithHooks = (props) => {
@@ -24,17 +25,17 @@ const ProfilestatusWithHooks = (props) => {
 		setStatus(props.status)
 		}, [props.status]);
 
-		return (<div>
+		return (<Row>
 			{ !editMode &&
-				<div>
+				<Col>
 					<span onDoubleClick = {activateEditMode}>{props.status || "STATUS"}</span>
-				</div>}
+				</Col>}
 			{ editMode &&
-				<div className={style.style_input}>
+				<Col>
 					<input onChange={onStatusChange} autoFocus={true} value={status} onBlur={deactivateEditMode}/>
-				</div>
+				</Col>
 			}
-		</div>
+		</Row>
 	)
 };
 

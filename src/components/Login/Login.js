@@ -8,9 +8,11 @@ import {connect} from 'react-redux';
 import {Redirect} from 'react-router-dom';
 import { Form, Button} from 'react-bootstrap';
 
+
 const Text = Textarea('input');
 
 const LoginForm = ({submitting, pristine, invalid, captchaUrl, ...props}) => {
+	
 	return (
 		<Form onSubmit={props.handleSubmit}>
 			<Form.Group controlId="formBasicEmail" >
@@ -55,7 +57,7 @@ const LoginForm = ({submitting, pristine, invalid, captchaUrl, ...props}) => {
 								validate = {required}
 						 	/>
 			}
-			{props.error && <div className={style.error}>{props.error}</div> }
+			{props.error && <div className={style.error}>{props.error}</div> } 
 			<Button variant="primary" type="submit">
 				Log in
 			</Button>

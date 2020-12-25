@@ -1,29 +1,14 @@
 
-.app-wrapper {
-  display: grid;
-  grid-template-columns: 200px 1fr; 
-  grid-template-rows: auto; 
-  grid-template-areas: 
-  "header header"
-  "nav content"
-  "footer footer";
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 3px;
-  width: 906px;
-  height: auto;
-  overflow-x: hidden;
-  background: rgb(235, 235, 146);
-  border-radius: 5px;
-  box-shadow: 0px -1px 5px 5px rgba(0,0,0,0.75);
+
+
+.ant-row-rtl #components-layout-demo-top-side-2 .logo {
+  margin: 16px 0 16px 24px;
 }
 
-.app-wrapper-content {
-  grid-area: content;
-  position: relative;
-  background-color: rgb(236, 235, 235);
-  min-height: 650px;
-  width: 700px;
-  border-radius: 5px;
+.site-layout-background {
+  background: rgb(252, 252, 252);
+}
+
+a {
+  text-decoration: none !important;
 }

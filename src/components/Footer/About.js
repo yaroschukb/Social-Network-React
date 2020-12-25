@@ -1,21 +1,29 @@
 import React, {useState} from 'react';
-import { Button, Modal } from 'react-bootstrap';
+import { Modal, Button } from 'antd';
 
 function About (props) {
 
-    const [modal, setModal] = useState(false);
-    const toggle = () => setModal(!modal);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+    const showModal = () => setIsModalVisible(true);
+    const handleCancel = () => {
+      setIsModalVisible(false);
+    };
    
     return (
       <div className={props.className}>
-        <Button variant="warning" size="sm" onClick={toggle}>
+        <Button type="warning" onClick={showModal}>
           <b>About Project</b>
         </Button>
-        <Modal show={modal} onHide={toggle} className={props.className}>
-          <Modal.Header toggle={toggle}>
-            React bull study project
-          </Modal.Header>
-          <Modal.Body>
+        <Modal visible={isModalVisible} 
+              onCancel={handleCancel}
+              footer={[
+                <Button type="info" onClick={handleCancel}>Cancel</Button>,
+                <Button type="success"><a href="https://github.com/yaroschukb/Social-Network-React" target="_blank" rel="noopener noreferrer">Go to Github</a></Button>
+              ]}
+              title={
+                <h1>React study pet-project</h1>
+              }
+              >
             <ul>
               <li>
                 <b>Author of the project:</b> Bohdan Yaroshchuk
@@ -59,13 +67,6 @@ function About (props) {
                   <b>axios</b> - Promise based HTTP client for the browser and node.js
                 </li>
               </ol>
-              <p>
-                More information on <a href="https://github.com/yaroschukb/StudyProjectReact" target="_blank" rel="noopener noreferrer">github repository</a>
-              </p>
-          </Modal.Body>
-          <Modal.Footer>
-            <Button color="secondary" onClick={toggle}>Cancel</Button>
-          </Modal.Footer>
         </Modal>
     </div>
     )

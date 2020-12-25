@@ -1,32 +1,37 @@
 import React from 'react';
 import ss from './News.module.css';
 import {Link} from 'react-router-dom';
+import moment from 'moment'
+import { Row, Col, Image, Typography } from 'antd';
+const { Title, Text } = Typography;
+
 
 const News = (props) => {
- 	return (
-    <div className={ss.content}>
-      <div>
+  debugger
+ 	return (<>
+    <Title style={{position:'relative', left: '30%'}}>The New York Times</Title>
+    <Row className={ss.content}>
         {props.news.map(e=>{
           return (
-            <div className={ss.news_block}>
+            <Col className={ss.news_block} span={10}>
               <h1> {e.title} </h1>
-              <div>
-                  <img src={e.multimedia[0].url} alt={e.title}/>
-              </div>
-              <span> 
+              <Row>
+                  <Image src={e.multimedia[0].url} alt={e.title}/>
+              </Row>
+              <Row> 
                 {e.abstract} 
-              </span>
+              </Row>
               <Link to={e.url}>
                 Read more
               </Link>
-              <span>
-                {e.created_date} 
-              </span>        
-            </div>
+              <Row>
+                <Text>Published date: {e.published_date.split('').splice(0,10).join('').split('-').reverse().join('-')}</Text>
+              </Row>        
+            </Col>
           )
         })}
-      </div>
-    </div> 
+    </Row>
+    </> 
   )
 };
 

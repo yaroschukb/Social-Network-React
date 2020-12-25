@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import {getUserProfile, getStatus, updateStatus, saveProfile} from '../../Redux/profilePageReducer';
 import {withRouter} from 'react-router-dom';
 import {compose} from 'redux';
+import { Row } from 'antd';
 
 class ProfileContainer extends React.Component {
   refreshProfile(){
@@ -30,7 +31,7 @@ class ProfileContainer extends React.Component {
        
 	render(){
     return (
-      <div>
+      <Row>
         <Profile 
             {...this.props} 
             profile={this.props.profile} 
@@ -39,7 +40,7 @@ class ProfileContainer extends React.Component {
             isAuth={this.props.isAuth}
             saveProfile={this.props.saveProfile}
         />
-      </div>
+      </Row>
     )
   }
 };

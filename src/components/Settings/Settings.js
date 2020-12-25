@@ -1,8 +1,7 @@
 import React from 'react';
-import ss from './Settings.module.css';
 import {connect} from 'react-redux';
 import {savePhotos} from '../../Redux/profilePageReducer.js';
-
+import { Col, Button } from 'antd';
 
 const Settings =(props)=> {
 
@@ -14,12 +13,15 @@ const Settings =(props)=> {
 
 
 	return (
-    <div className={ss.content}>
-        {props.isAuth && <div class="upload-btn-wrapper">
-                            <button className={ss.btn}> Change Avatar </button>
+    <>
+    <Col>
+      {props.isAuth && <div class="upload-btn-wrapper">
+                            <Button style={{width:'20%', backgroundColor:'#52c41a', color:'#fff'}}> Change Avatar </Button>
                             <input type="file" onChange={changeAvatar} />
-                          </div>}
-    </div> 
+                          </div>
+      }
+    </Col>
+    </> 
   )
 };
 

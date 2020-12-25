@@ -6,7 +6,7 @@ import About from '../Footer/About';
 
 const Nav = (props) => {
 	return (
-	  <div className={style.block}>
+	  {/* <div className={style.block}>
 	    <div>	
         <nav className = {style.nav}>
           <div className={style.item}>
@@ -35,7 +35,8 @@ const Nav = (props) => {
       <div className={style.friends}>
         <OnlineContainer />
       </div>
-    </div>
+    </div> */}
+      
   )
 };
 

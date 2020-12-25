@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Users.module.css';
 import Paginator from '../common/Paginator/Paginator';
 import UserProfile from './UserProfile/UserProfile';
+import { Row } from 'antd';
 
 const Users = (props) => {
   return (
@@ -9,13 +10,11 @@ const Users = (props) => {
       <div>
         <Paginator
           totalItemsCount={props.totalUsersCount}
-          pageSize={props.pageSize}
-          pagesCount={props.pagesCount}
-          currentPage={props.currentPage}
+          currentPage={props.currentPage} 
           onPageChanged={props.onPageChanged}
         />
       </div>
-      <div>
+      <Row>
         {props.users.map(e=> (
           <UserProfile
             key={e.id} 
@@ -25,7 +24,7 @@ const Users = (props) => {
             followingInProgress={props.followingInProgress}
           />
         ))}
-      </div>
+      </Row>
     </div>
   )
 };
