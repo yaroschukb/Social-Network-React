@@ -12,7 +12,6 @@ import { Form, Button} from 'react-bootstrap';
 const Text = Textarea('input');
 
 const LoginForm = ({submitting, pristine, invalid, captchaUrl, ...props}) => {
-	
 	return (
 		<Form onSubmit={props.handleSubmit}>
 			<Form.Group controlId="formBasicEmail" >

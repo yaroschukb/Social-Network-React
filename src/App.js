@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
 import HeaderContainer from './components/Header/HeaderContainer.js';
-import Nav from './components/Nav/Nav.js';
 import Music from './components/Music/Music.js';
 import Settings from './components/Settings/Settings.js';
 import NewsContainer from './components/News/NewsContainer.js';
@@ -82,7 +81,6 @@ class App extends React.Component {
                     <Menu.Item key="7" disabled>
                       <About />
                     </Menu.Item>
-                    
                   </Menu>
                 </Sider>
                 <Content style={{ padding: '0 24px', minHeight: 280 }}>

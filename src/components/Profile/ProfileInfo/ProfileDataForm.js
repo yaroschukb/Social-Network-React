@@ -12,9 +12,7 @@ const ProfileDataReduxForm = ({handleSubmit, profile, error}) => {
 	return (
         <Form onSubmit={handleSubmit}>
             <div>
-                <Button type="submit">
-                    Save
-                </Button>
+                <Button type="submit"> Save </Button>
             </div>
             { error && <div className={style.error}>{error}</div> }
             <Form.Group controlId="formFullname">
